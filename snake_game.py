@@ -26,7 +26,6 @@ class SnakeGame:
                 return food
     
     def get_input(self):
-        """Non-blocking input check for Windows"""
         if msvcrt.kbhit():
             try:
                 key = msvcrt.getch()
@@ -131,4 +130,5 @@ if __name__ == "__main__":
     input()
     
     game = SnakeGame()
+
     game.run()
